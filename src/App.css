@@ -1,0 +1,309 @@
+.App {
+  text-align: center;
+}
+
+body{
+  --bg:#192E58;
+  --text:#1D65A6;
+  /* padding: 0 1rem; */
+  background-color: var(--bg);
+  font-size: calc(10px + 2vmin);
+}
+
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: var(--text);
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--text);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.container,.navbar,.find,.find-container,.center{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.center{
+  /* min-height: 100%; */
+  width: 40%;
+  margin: 2rem 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tem,.tem >div{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.tem >div{
+  flex-direction: row;
+}
+.notedit{
+  pointer-events: none;
+}
+.center > *{
+  text-align: center;
+  width: 100%;
+}
+.center svg{
+  transform: scale(1.5);
+}
+.center .form > div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-transform: capitalize;
+}
+.center input,.Dropdown-root{
+  margin: 1rem 0;
+  width: 100%;
+  text-align: start;
+}
+.Dropdown-root{
+  width: 108%;
+}
+.Dropdown-control{
+  text-align: start;
+  color: white;
+  padding: .5rem !important;
+  background-color: transparent !important;
+}
+.center .btn{
+  margin: 1rem 0;
+}
+
+.center a{
+  margin: 1rem .3rem;
+
+}
+.center .btn{
+  width: 40%;
+}
+
+.navbar{
+  
+  background-color: var(--bg);
+
+  align-items: flex-start;
+  justify-content: space-around;
+
+  border-right: 2px solid rgb(30, 73, 214);
+
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  left: 0;
+
+  /* 1min */
+}
+.navbar svg{
+margin: 1rem;
+padding: .5rem;
+  transform: scale(1.4);
+  color: white;
+  border-radius: 12px;
+}
+
+.navbar svg:hover{
+  cursor: pointer;
+  background-color: #1D65A6;
+}
+
+.find input,.find button,.center input,.btn,.Dropdown-control{
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  /* border: none; */
+  flex: 1;
+  border: 2px solid var(--text);
+}
+
+.box{
+  /* opacity: .7; */
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  /* border: 2px solid var(--text); */
+
+  margin: .8rem .7rem;
+  border-radius: 1.5rem;
+  background-color: rgb(29 38 97 / .15);
+  box-shadow: 0px 0px 5px var(--text);
+  /* background-color: rgba(255, 255, 255, .15); */
+  text-transform: capitalize;
+  backdrop-filter: blur(5px);
+
+  /* width: 50%; */
+}
+.box h3{
+  text-align: center;
+}
+.description{
+  opacity: .8;
+  text-align: center;
+  font-size: 1rem;
+
+}
+._404{
+  max-height: 30rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.right-box .box{
+  padding: 1rem 0;
+
+}
+.load{
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+}
+.load svg{
+  padding: 1rem;
+  animation: spin 1s linear infinite;
+}
+.text-box{
+  width: 70% !important;
+    line-height: 2rem;
+    text-align: justify;
+}
+a{
+  color: white;
+}
+
+@keyframes spin {
+
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%{
+    
+    transform: rotate(360deg);
+  }
+  
+}
+
+._404 img{
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 60%;
+
+}
+.left-box div div{
+  margin: .4rem 0;
+}
+.wind div div{
+  margin: .4rem 1rem;
+  text-align: center;
+}
+.find-container .box{
+  width: 100%;
+}
+
+.find-container .box img{
+  width: 80%;
+  height: 12rem;
+}
+
+
+.find-container,.find{
+  flex: 3;
+  width: 100%;
+}
+.find-container{
+  margin-top: 1rem;
+}
+
+.row,.find,._404{
+  display: flex;
+  width: 100%;
+}
+.find{
+  width: 95%;
+  /* padding: 1rem; */
+
+}
+.find,._404{
+  flex-direction: column;
+  align-items: center;
+  /* flex-direction: ; */
+
+}
+.row{
+  margin: 0 auto;
+  width: 80%;
+}
+.find button{
+  flex: 0;
+  border-left: none;
+}
+.find button:hover,.btn:hover{
+  background-color: var(--text);
+  cursor: pointer;
+}
+
+
+.home{
+  flex: 2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #192E58;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: auto;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
